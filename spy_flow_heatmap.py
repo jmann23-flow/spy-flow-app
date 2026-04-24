@@ -5,6 +5,7 @@ import datetime
 import time
 
 API_KEY = st.secrets["API_KEY"]
+
 st.set_page_config(
     page_title="SPY Flow",
     layout="wide",
