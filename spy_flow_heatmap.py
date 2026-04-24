@@ -32,8 +32,16 @@ def fetch_data():
         "limit": 500,
         "apiKey": API_KEY
     }
+
     r = requests.get(url, params=params)
-    return r.json()
+
+    st.sidebar.write("API Status:", r.status_code)
+    st.sidebar.write("API Preview:", r.text[:300])
+
+    try:
+        return r.json()
+    except:
+        return {}
 
 placeholder = st.empty()
 
