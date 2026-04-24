@@ -4,8 +4,7 @@ import requests
 import datetime
 import time
 
-API_KEY = "_IPppQSFsKWHyhg7ahViV6kcEkVgQrqh"
-
+API_KEY = st.secrets["API_KEY"]
 st.set_page_config(
     page_title="SPY Flow",
     layout="wide",
